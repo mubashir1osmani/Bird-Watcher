@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba6506029669a40e543e8bfb7275bc4d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ba6506029669a40e543e8bfb7275bc4d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba6506029669a40e543e8bfb7275bc4d = L.map(
+                "map_ba6506029669a40e543e8bfb7275bc4d",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac14763ffd973b321a5c7b4cfb8fbea1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ac14763ffd973b321a5c7b4cfb8fbea1.addTo(map_ba6506029669a40e543e8bfb7275bc4d);
+        
+    
+            var marker_9d72c49fbbb8c98b2b7f2f2eece885ea = L.marker(
+                [34.0522, -118.2437],
+                {}
+            ).addTo(map_ba6506029669a40e543e8bfb7275bc4d);
+        
+    
+            var icon_d4b63058639fbf63a03a48616816c390 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d72c49fbbb8c98b2b7f2f2eece885ea.setIcon(icon_d4b63058639fbf63a03a48616816c390);
+        
+    
+        var popup_e654644795c3ddee445ace8f242b8b22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_796c152dc109ed8cfd71c7c23d1611e3 = $(`<div id="html_796c152dc109ed8cfd71c7c23d1611e3" style="width: 100.0%; height: 100.0%;">California Condor</div>`)[0];
+                popup_e654644795c3ddee445ace8f242b8b22.setContent(html_796c152dc109ed8cfd71c7c23d1611e3);
+            
+        
+
+        marker_9d72c49fbbb8c98b2b7f2f2eece885ea.bindPopup(popup_e654644795c3ddee445ace8f242b8b22)
+        ;
+
+        
+    
+    
+            var marker_79227b6fd7b1271eb9c714f5b5b00d6e = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_ba6506029669a40e543e8bfb7275bc4d);
+        
+    
+            var icon_f8621cd9833d63e6ab1bf88c94dc9d19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79227b6fd7b1271eb9c714f5b5b00d6e.setIcon(icon_f8621cd9833d63e6ab1bf88c94dc9d19);
+        
+    
+        var popup_0cfa307e2597284befe185b4aae46722 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9decf54cb71c993b1ffa023b751d66c = $(`<div id="html_f9decf54cb71c993b1ffa023b751d66c" style="width: 100.0%; height: 100.0%;">Florida Panther</div>`)[0];
+                popup_0cfa307e2597284befe185b4aae46722.setContent(html_f9decf54cb71c993b1ffa023b751d66c);
+            
+        
+
+        marker_79227b6fd7b1271eb9c714f5b5b00d6e.bindPopup(popup_0cfa307e2597284befe185b4aae46722)
+        ;
+
+        
+    
+    
+            var marker_f8f23f5de683ae287fd4e9d567df752c = L.marker(
+                [21.3069, -157.8583],
+                {}
+            ).addTo(map_ba6506029669a40e543e8bfb7275bc4d);
+        
+    
+            var icon_746f2e596d737c8e2f4f200a0f6ec596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8f23f5de683ae287fd4e9d567df752c.setIcon(icon_746f2e596d737c8e2f4f200a0f6ec596);
+        
+    
+        var popup_541529802bee721b63c9581624439c6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5669fc87da1427c95f08a793e2d46a2 = $(`<div id="html_f5669fc87da1427c95f08a793e2d46a2" style="width: 100.0%; height: 100.0%;">Hawaiian Monk Seal</div>`)[0];
+                popup_541529802bee721b63c9581624439c6c.setContent(html_f5669fc87da1427c95f08a793e2d46a2);
+            
+        
+
+        marker_f8f23f5de683ae287fd4e9d567df752c.bindPopup(popup_541529802bee721b63c9581624439c6c)
+        ;
+
+        
+    
+    
+            var marker_f88f964675d82c5d0990faa57b5806e9 = L.marker(
+                [35.7796, -78.6382],
+                {}
+            ).addTo(map_ba6506029669a40e543e8bfb7275bc4d);
+        
+    
+            var icon_4246cbd12a66f7fb5ebf4f5e4cd2422c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f88f964675d82c5d0990faa57b5806e9.setIcon(icon_4246cbd12a66f7fb5ebf4f5e4cd2422c);
+        
+    
+        var popup_af453d28a7fb71828af96bab60212ed0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12dbfdf9106daf35bec8b2e8a939e0eb = $(`<div id="html_12dbfdf9106daf35bec8b2e8a939e0eb" style="width: 100.0%; height: 100.0%;">Red Wolf</div>`)[0];
+                popup_af453d28a7fb71828af96bab60212ed0.setContent(html_12dbfdf9106daf35bec8b2e8a939e0eb);
+            
+        
+
+        marker_f88f964675d82c5d0990faa57b5806e9.bindPopup(popup_af453d28a7fb71828af96bab60212ed0)
+        ;
+
+        
+    
+    
+            var marker_bcb979931c004d052eabff07f81d9f5c = L.marker(
+                [29.7604, -95.3698],
+                {}
+            ).addTo(map_ba6506029669a40e543e8bfb7275bc4d);
+        
+    
+            var icon_2d34ca8136c1ed44315416b42d44a654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bcb979931c004d052eabff07f81d9f5c.setIcon(icon_2d34ca8136c1ed44315416b42d44a654);
+        
+    
+        var popup_cce8df38b6b8b48ed96922b27859c1cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4de944a76721a540805347b21935be9 = $(`<div id="html_a4de944a76721a540805347b21935be9" style="width: 100.0%; height: 100.0%;">Whooping Crane</div>`)[0];
+                popup_cce8df38b6b8b48ed96922b27859c1cb.setContent(html_a4de944a76721a540805347b21935be9);
+            
+        
+
+        marker_bcb979931c004d052eabff07f81d9f5c.bindPopup(popup_cce8df38b6b8b48ed96922b27859c1cb)
+        ;
+
+        
+    
+    
+            var marker_332aed11e16592725dacc0639c9eae21 = L.marker(
+                [30.6954, -88.0399],
+                {}
+            ).addTo(map_ba6506029669a40e543e8bfb7275bc4d);
+        
+    
+            var icon_ef06c07695b007d09290c2f40093ecc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_332aed11e16592725dacc0639c9eae21.setIcon(icon_ef06c07695b007d09290c2f40093ecc7);
+        
+    
+        var popup_c580b07346601af3d7ae890b34b3fa91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f43de6ddc7dc991031d84ca0e4fd9b7 = $(`<div id="html_3f43de6ddc7dc991031d84ca0e4fd9b7" style="width: 100.0%; height: 100.0%;">Kemp's Ridley Sea Turtle</div>`)[0];
+                popup_c580b07346601af3d7ae890b34b3fa91.setContent(html_3f43de6ddc7dc991031d84ca0e4fd9b7);
+            
+        
+
+        marker_332aed11e16592725dacc0639c9eae21.bindPopup(popup_c580b07346601af3d7ae890b34b3fa91)
+        ;
+
+        
+    
+</script>
+</html>
